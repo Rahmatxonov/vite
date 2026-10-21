@@ -1,8 +1,10 @@
+import Navbar from "../components/Navbar";
+
 export default function LoginPage() {
-
-
-
-    return(
-        <h1>LoginPage</h1>
-    )
+  return (
+    <>
+      <Navbar />
+      <h1>LoginPage</h1>
+    </>
+  );
 }

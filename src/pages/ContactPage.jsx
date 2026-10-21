@@ -1,8 +1,10 @@
+import Navbar from "../components/Navbar";
+
 export default function ContactPage() {
-
-
-
-    return(
-        <h1>ContactPage</h1>
-    )
+  return (
+    <>
+      <Navbar />
+      <h1>ContactPage</h1>
+    </>
+  );
 }
