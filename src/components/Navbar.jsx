@@ -4,17 +4,17 @@ const Navbar = () => {
   return (
     <nav>
       <div className="container">
-       <div className="navbar">
+       <div className="navbar flex justify-between   ">
          <IoLogoGoogle style={{fontSize: "50px"}} />
-        <ul className="navbar__menu">
+        <ul className="navbar__menu flex gap-x-[10px]">
           <NavLink to={'/'}>
             <li>Home</li>
           </NavLink>
           <NavLink to={'/about'}>
-            <li>About</li>
+            <li >About</li>
           </NavLink>
           <NavLink to={'/contact'}>
-            <li>Contact</li>
+            <li >Contact</li>
           </NavLink>
           <NavLink to={'/login'}>
             <li>Login</li>
