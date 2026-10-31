@@ -72,8 +72,6 @@
 
 // export default App;
 
-
-
 // import { useState } from "react";
 
 // function App() {
@@ -91,7 +89,6 @@
 //   }
 // }
 
-
 //   return (
 //     <div>
 //       <h2>Telefon ovozini boshqaring</h2>
@@ -106,3 +103,39 @@
 // }
 
 // export default App;
+
+
+import bmw from './assets/bmw.avif';
+import tesla from './assets/tesla.jpg';
+import toyota from './assets/toyota.jpg';
+
+
+const App = () => {
+  return (
+    <div className="container">
+      <div className="flex items-center justify-center gap-2 flex flex-wrap">
+        <div className="w-[300px] border-2 border-black rounded-xl p-3">
+          <img className='h-[200px] object-cover' src={bmw} alt="error" />
+          <h2 className='text-red-500 text-center text-3xl sm:text-blue-500 md:text-yellow-500'>BMW</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat praesentium quasi saepe libero quod iste debitis at suscipit pariatur facilis?</p>
+          <button>CLICK</button>
+        </div>
+        <div className="w-[300px] border-2 border-black rounded-xl p-3">
+          <img className='h-[200px] object-cover' src={tesla} alt="error" />
+          <h2 className='text-red-500 text-center text-3xl sm:text-blue-500 md:text-yellow-500'>TESLA</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat praesentium quasi saepe libero quod iste debitis at suscipit pariatur facilis?</p>
+          <button>CLICK</button>
+        </div>
+        <div className="w-[300px] border-2 border-black rounded-xl p-3">
+          <img className='h-[200px] object-cover' src={toyota} alt="error" />
+          <h2 className='text-red-500 text-center text-3xl sm:text-blue-500 md:text-yellow-500'>TOYOTA</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat praesentium quasi saepe libero quod iste debitis at suscipit pariatur facilis?</p>
+          <button>CLICK</button>
+        </div>
+
+      </div>
+    </div>
+  );
+};
+
+export default App;

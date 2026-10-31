@@ -1,42 +1,6 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-}
-
-body {
-    background-color: gray;
-    overflow-x: hidden;
-}
-
+@import "tailwindcss";
 .container {
-    max-width: 1300px;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-}
-
-a {
-    text-decoration: none;
-}
-
-li {
-    font-size: 30px;
-    color: black;
-}
-
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.navbar__menu {
-    display: flex;
-    align-items: center;
-    column-gap: 30px;
-}
-
-.active {
-    border-bottom: 3px solid black;
 }
