@@ -1,3 +1,4 @@
+
 // import { useState } from "react";
 
 // function App() {
@@ -7,6 +8,7 @@
 //     <div>
 //       <h2>Matn o'lchamini o'zgartirish</h2>
 //       <p style={{fontSize: `${fontSize}px`}}>Hello World</p>
+
 
 //       <button onClick={() => setFontSize(fontSize + 5)}>Kattalashtirish</button>
 //       <button onClick={() => setFontSize(fontSize - 5)}>Kichiklashtirish</button>
@@ -139,3 +141,4 @@ const App = () => {
 };
 
 export default App;
+

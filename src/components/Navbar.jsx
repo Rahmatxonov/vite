@@ -31,7 +31,7 @@
 
 const Navbar = () => {
   return (
-    <>
+
     
 
 <header class="text-gray-600 body-font">
@@ -47,6 +47,28 @@ const Navbar = () => {
       <a class="mr-5 hover:text-gray-900">Second Link</a>
       <a class="mr-5 hover:text-gray-900">Third Link</a>
       <a class="mr-5 hover:text-gray-900">Fourth Link</a>
+
+    <nav>
+      <div className="container">
+       <div className="navbar flex justify-between   ">
+         <IoLogoGoogle style={{fontSize: "50px"}} />
+        <ul className="navbar__menu flex gap-x-[10px]">
+          <NavLink to={'/'}>
+            <li>Home</li>
+          </NavLink>
+          <NavLink to={'/about'}>
+            <li >About</li>
+          </NavLink>
+          <NavLink to={'/contact'}>
+            <li >Contact</li>
+          </NavLink>
+          <NavLink to={'/login'}>
+            <li>Login</li>
+          </NavLink>
+        </ul>
+       </div>
+      </div>
+
     </nav>
     <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
       <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
