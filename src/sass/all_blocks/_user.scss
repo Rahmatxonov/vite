@@ -1,0 +1,12 @@
+.box {
+    width: 400px;
+    height: 400px;
+    background-color: yellow;
+    border: 3px solid black;
+    border-radius: 20px;
+    &__title {
+        color: blue;
+        text-align: center;
+        font-size: 40px;
+    }
+}
