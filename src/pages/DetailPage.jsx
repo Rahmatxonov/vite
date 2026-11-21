@@ -1,10 +1,11 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 const DetailPage = () => {
   const { id } = useParams();
   const [books, setBooks] = useState("");
+  const navigate = useNavigate();
 
   useEffect(() => {
     const saveBooks = JSON.parse(localStorage.getItem("data")) || [];
@@ -21,6 +22,12 @@ const DetailPage = () => {
         alt={books.title}
       />
       <h2>{books.title}</h2>
+      <button
+        onClick={() => navigate("/")}
+        className="border border-2 border-black px-4 py-2 bg-amber-300 cursor-pointer"
+      >
+        Back to home
+      </button>
     </div>
   );
 };
